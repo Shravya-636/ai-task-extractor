@@ -42,11 +42,13 @@ Use exactly this structure:
 Rules:
 1. Extract only actionable tasks.
 2. Do not invent tasks.
-3. Do not invent people.
-4. If an assignee is not mentioned, use null.
-5. If a due date is not mentioned, use null.
-6. Keep the original meaning of the task.
-7. Return an empty tasks array if there are no actionable tasks.
+3. Do not invent people or teams.
+4. If a task is assigned to an individual, use the person's name as the assignee.
+5. If a task is assigned to a team or group, use the team/group name as the assignee.
+6. If no individual or team is mentioned, use null.
+7. If a due date is not mentioned, use null.
+8. Keep the original meaning of the task.
+9. Return an empty tasks array if there are no actionable tasks.
 
 Meeting notes:
 
